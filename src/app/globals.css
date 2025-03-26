@@ -3,19 +3,85 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--color-primary: #ffffff;
+	--color-secondary: #000000;
+	--color-tertiary: #121212;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@layer base {
+	html {
+		font-family: var(--font-generalSans), sans-serif;
+	}
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-cabinet), sans-serif;
+	background-color: var(--color-secondary);
+	color: var(--color-primary);
+}
+
+.theme-1 {
+	--color-primary: #d6ff00;
+	--color-secondary: #272727;
+	--color-tertiary: #1a1a1a;
+}
+
+.theme-2 {
+	--color-primary: #000000;
+	--color-secondary: #ffffff;
+	--color-tertiary: #f5f5f5;
+}
+
+.theme-3 {
+	--color-primary: #006aff;
+	--color-secondary: #141d2e;
+	--color-tertiary: #0d1420;
+}
+
+.theme-4 {
+	--color-primary: #ffbcd2;
+	--color-secondary: #1f6246;
+	--color-tertiary: #154634;
+}
+
+.theme-5 {
+	--color-primary: #ffe085;
+	--color-secondary: #ba554a;
+	--color-tertiary: #8f3f36;
+}
+
+.theme-6 {
+	--color-primary: #ebff00;
+	--color-secondary: #504c26;
+	--color-tertiary: #3b381a;
+}
+
+.theme-7 {
+	--color-primary: #ebf0ff;
+	--color-secondary: #99a3bf;
+	--color-tertiary: #7b859e;
+}
+
+.theme-8 {
+	--color-primary: #ff0000;
+	--color-secondary: #040f49;
+	--color-tertiary: #020a30;
+}
+
+.theme-9 {
+	--color-primary: #ffd4af;
+	--color-secondary: #42503e;
+	--color-tertiary: #2d382f;
+}
+
+.theme-10 {
+	--color-primary: #ffcbdb;
+	--color-secondary: #3668ae;
+	--color-tertiary: #294b80;
+}
+
+.theme-11 {
+	--color-primary: #f1fae4;
+	--color-secondary: #868c7d;
+	--color-tertiary: #6d6f67;
 }

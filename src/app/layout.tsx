@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Loader from "./components/loader";
 
 const generalSans = localFont({
 	src: [
@@ -80,7 +81,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className={generalSans.variable}>
-			<body>{children}</body>
+			<body>
+				<Loader />
+				{children}
+			</body>
 		</html>
 	);
 }

@@ -11,19 +11,19 @@ export default function MenuContent() {
 				<Link
 					heading="Meowview"
 					subheading="Learn what we do here"
-					href="#"
+					href="/meowview"
 					icon={<AboutCat />}
 				/>
 				<Link
 					heading="Meowworks"
 					subheading="Our work speaks for itself"
-					href="#"
+					href="/meowworks"
 					icon={<ProjectCat />}
 				/>
 				<Link
 					heading="Meowlink"
 					subheading="We work with great people"
-					href="#"
+					href="/meowlinks"
 					icon={<ContactCat />}
 				/>
 			</div>

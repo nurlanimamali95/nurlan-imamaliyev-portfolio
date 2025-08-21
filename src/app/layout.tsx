@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Loader from "./components/loader";
+import Navigation from "@/app/components/navigation";
 
 const generalSans = localFont({
 	src: [
@@ -82,7 +82,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={generalSans.variable}>
 			<body>
-				<Loader />
+				<Navigation />
 				{children}
 			</body>
 		</html>

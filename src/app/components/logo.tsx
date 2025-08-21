@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -15,22 +16,23 @@ export default function Logo({}: Props) {
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
 		>
-			<div className="relative w-[35px] md:w-[50px] h-[60px] flex items-end">
-				<motion.svg
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 4010.000000 5557.000000"
-					preserveAspectRatio="xMidYMid meet"
-					className="w-full h-full"
-					initial={{ opacity: 1 }}
-					animate={{ opacity: 1 }}
-				>
-					<g
-						transform="translate(0.000000,5557.000000) scale(0.100000,-0.100000)"
-						fill="var(--color-primary)"
-						stroke="none"
+			<Link href="/#">
+				<div className="relative w-[35px] md:w-[50px] h-[60px] flex items-end">
+					<motion.svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 4010.000000 5557.000000"
+						preserveAspectRatio="xMidYMid meet"
+						className="w-full h-full"
+						initial={{ opacity: 1 }}
+						animate={{ opacity: 1 }}
 					>
-						<path
-							d="M19550 49133 c-2992 -71 -5876 -853 -8440 -2286 -1772 -991 -3393
+						<g
+							transform="translate(0.000000,5557.000000) scale(0.100000,-0.100000)"
+							fill="var(--color-primary)"
+							stroke="none"
+						>
+							<path
+								d="M19550 49133 c-2992 -71 -5876 -853 -8440 -2286 -1772 -991 -3393
 -2302 -4741 -3837 -1654 -1884 -2909 -4078 -3714 -6495 -935 -2807 -1237
 -5858 -879 -8885 578 -4899 2888 -9297 6498 -12374 1574 -1342 3383 -2409
 5311 -3131 1643 -616 3375 -990 5145 -1109 812 -55 1775 -55 2625 0 2130 137
@@ -48,18 +50,18 @@ l6 27 -4110 0 -4110 0 -6 -27 c-3 -16 -21 -113 -41 -218 -96 -507 -242 -1056
 4110 -8 l4111 0 -6 33 c-3 17 -19 124 -35 237 -111 757 -287 1587 -497 2340
 -668 2402 -1774 4582 -3278 6460 -2364 2951 -5597 5044 -9360 6059 -1827 493
 -3817 730 -5745 684z"
-						/>
+							/>
 
-						<AnimatePresence>
-							{hovered ? null : (
-								<motion.g
-									initial={{ opacity: 0, scale: 0.9 }}
-									animate={{ opacity: 1, scale: 1 }}
-									exit={{ opacity: 0, scale: 0.9 }}
-									transition={{ duration: 0.3 }}
-								>
-									<path
-										d="M19550 49133 c-2992 -71 -5876 -853 -8440 -2286 -1772 -991 -3393
+							<AnimatePresence>
+								{hovered ? null : (
+									<motion.g
+										initial={{ opacity: 0, scale: 0.9 }}
+										animate={{ opacity: 1, scale: 1 }}
+										exit={{ opacity: 0, scale: 0.9 }}
+										transition={{ duration: 0.3 }}
+									>
+										<path
+											d="M19550 49133 c-2992 -71 -5876 -853 -8440 -2286 -1772 -991 -3393
 -2302 -4741 -3837 -1654 -1884 -2909 -4078 -3714 -6495 -935 -2807 -1237
 -5858 -879 -8885 578 -4899 2888 -9297 6498 -12374 1574 -1342 3383 -2409
 5311 -3131 1643 -616 3375 -990 5145 -1109 812 -55 1775 -55 2625 0 2130 137
@@ -104,26 +106,27 @@ l-53 175 161 165 c176 180 266 291 387 475 269 408 397 897 359 1365 -14 166
 -175 115 -574 115 -598 0 -4 1850 -8 4110 -8 l4111 0 -6 33 c-3 17 -19 124
 -35 237 -111 757 -287 1587 -497 2340 -668 2402 -1774 4582 -3278 6460 -2364
 2951 -5597 5044 -9360 6059 -1827 493 -3817 730 -5745 684z"
-									/>
-								</motion.g>
-							)}
-						</AnimatePresence>
-					</g>
-				</motion.svg>
-			</div>
-			<AnimatePresence>
-				{hovered && (
-					<motion.span
-						className="absolute left-[45px] md:bottom-[15px] md:left-[46px] text-3xl font-bold text-[var(--color-primary)] whitespace-nowrap hidden md:block"
-						initial={{ x: 10, opacity: 0 }}
-						animate={{ x: 0, opacity: 1 }}
-						exit={{ x: 10, opacity: 0 }}
-						transition={{ duration: 0.3 }}
-					>
-						osmo Cats
-					</motion.span>
-				)}
-			</AnimatePresence>
+										/>
+									</motion.g>
+								)}
+							</AnimatePresence>
+						</g>
+					</motion.svg>
+				</div>
+				<AnimatePresence>
+					{hovered && (
+						<motion.span
+							className="absolute left-[45px] md:bottom-[15px] md:left-[46px] text-3xl font-bold text-[var(--color-primary)] whitespace-nowrap hidden md:block"
+							initial={{ x: 10, opacity: 0 }}
+							animate={{ x: 0, opacity: 1 }}
+							exit={{ x: 10, opacity: 0 }}
+							transition={{ duration: 0.3 }}
+						>
+							osmo Cats
+						</motion.span>
+					)}
+				</AnimatePresence>
+			</Link>
 		</div>
 	);
 }

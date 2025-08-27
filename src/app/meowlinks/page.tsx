@@ -8,37 +8,37 @@ const testimonials = [
 		name: "Luna Mee",
 		role: "Art Director at Starlight Studio",
 		text: "Working with Cosmo Cats was a cosmic experience! Their eye for detail and design is unmatched.",
-		image: "/images/testimonials/luna.png",
+		image: "/images/projects/byf.jpg",
 	},
 	{
 		name: "Leo Starson",
 		role: "Developer at Galaxy Apps",
 		text: "The creativity, communication, and delivery were out of this world. Highly recommended!",
-		image: "/images/testimonials/leo.png",
+		image: "/images/projects/byf.jpg",
 	},
 	{
 		name: "Mira Sun",
 		role: "Founder at Orbit Brands",
 		text: "Cosmo Cats brought our brand vision to life in a way no one else could. Pure magic!",
-		image: "/images/testimonials/mira.png",
+		image: "/images/projects/byf.jpg",
 	},
 	{
 		name: "Zane Comet",
 		role: "CTO at Nova Webworks",
 		text: "Our collaboration with Cosmo Cats launched us to the next level. Truly visionary work!",
-		image: "/images/testimonials/zane.png",
+		image: "/images/projects/byf.jpg",
 	},
 	{
 		name: "Kira Orbit",
 		role: "Designer at Lunalabs",
 		text: "I've never seen such dedication to aesthetics and functionality. Stunning results!",
-		image: "/images/testimonials/kira.png",
+		image: "/images/projects/byf.jpg",
 	},
 	{
 		name: "Ravi Moon",
 		role: "CEO at AstroMarketing",
 		text: "Professional, creative, and intuitive — Cosmo Cats are stellar partners in any project.",
-		image: "/images/testimonials/ravi.png",
+		image: "/images/projects/byf.jpg",
 	},
 ];
 

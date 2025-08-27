@@ -1,5 +1,5 @@
 import Logo from "@/app/components/logo";
-import ThemeToggle from "@/utils/toggleThemes";
+import ThemeToggle from "@/helper/toggleThemes";
 import HamburgerMenu from "@/app/components/burgerMenu";
 
 export default function Navigation() {

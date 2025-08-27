@@ -23,7 +23,7 @@ interface FloatingCat {
 	rotateDirection: 1 | -1;
 }
 
-export default function Loader() {
+export default function Loader({ onFinish }: { onFinish?: () => void }) {
 	const [isVisible, setIsVisible] = useState(true);
 	const [floatingCats, setFloatingCats] = useState<FloatingCat[]>([]);
 
@@ -64,7 +64,10 @@ export default function Loader() {
 
 		const controls = animate(percentage, 100, {
 			duration: 4,
-			onComplete: () => setIsVisible(false),
+			onComplete: () => {
+				setIsVisible(false);
+				onFinish?.();
+			},
 		});
 
 		return () => controls.stop();

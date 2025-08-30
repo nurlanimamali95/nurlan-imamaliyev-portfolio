@@ -56,6 +56,7 @@ export default function Footer() {
 						width={50}
 						height={50}
 						className="rounded-md"
+						unoptimized
 					/>
 					<span>by CosmoCats</span>
 				</div>

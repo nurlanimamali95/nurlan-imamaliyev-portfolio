@@ -7,7 +7,7 @@ import { SocialLinks } from "@/app/components/socialLinks";
 export default function MenuContent() {
 	return (
 		<section className="bg-tertiary p-4 md:p-8">
-			<div className="mx-auto max-w-5xl">
+			<div className="mx-auto max-w-5xl mb-10">
 				<Link
 					heading="Meowview"
 					subheading="Learn what we do here"
@@ -20,12 +20,12 @@ export default function MenuContent() {
 					href="/meowworks"
 					icon={<ProjectCat />}
 				/>
-				<Link
+				{/* <Link
 					heading="Meowlink"
 					subheading="We work with great people"
 					href="/meowlinks"
 					icon={<ContactCat />}
-				/>
+				/> */}
 			</div>
 			<SocialLinks />
 		</section>

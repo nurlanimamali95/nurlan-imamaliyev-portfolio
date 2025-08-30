@@ -26,19 +26,19 @@ export default function Footer() {
 
 					<nav className="flex gap-6 text-xs uppercase tracking-wide">
 						<Link
-							href="/about"
+							href="/meowview"
 							className="hover:text-tertiary transition-colors"
 						>
 							About
 						</Link>
 						<Link
-							href="/work"
+							href="/meowworks"
 							className="hover:text-tertiary transition-colors"
 						>
 							Work
 						</Link>
 						<Link
-							href="/contact"
+							href="/contactus"
 							className="hover:text-tertiary transition-colors"
 						>
 							Contact

@@ -12,6 +12,8 @@ export default {
 				primary: "var(--color-primary)",
 				secondary: "var(--color-secondary)",
 				tertiary: "var(--color-tertiary)",
+				"primary-glass": "var(--color-primary-glass)",
+				"secondary-glass": "var(--color-secondary-glass)",
 			},
 			fontFamily: {
 				sans: ["GeneralSans", "sans-serif"],

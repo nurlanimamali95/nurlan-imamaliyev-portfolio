@@ -6,6 +6,9 @@
 	--color-primary: #ffffff;
 	--color-secondary: #000000;
 	--color-tertiary: #121212;
+
+	--color-primary-glass: rgba(255, 255, 255, 0.7);
+	--color-secondary-glass: rgba(0, 0, 0, 0.6);
 }
 
 @layer base {
@@ -20,68 +23,112 @@ body {
 	color: var(--color-primary);
 }
 
+/* Theme 1 */
 .theme-1 {
 	--color-primary: #d6ff00;
 	--color-secondary: #272727;
 	--color-tertiary: #1a1a1a;
+
+	--color-primary-glass: rgba(214, 255, 0, 0.7);
+	--color-secondary-glass: rgba(39, 39, 39, 0.6);
 }
 
+/* Theme 2 */
 .theme-2 {
 	--color-primary: #000000;
 	--color-secondary: #ffffff;
 	--color-tertiary: #f5f5f5;
+
+	--color-primary-glass: rgba(0, 0, 0, 0.6);
+	--color-secondary-glass: rgba(255, 255, 255, 0.7);
 }
 
+/* Theme 3 */
 .theme-3 {
 	--color-primary: #006aff;
 	--color-secondary: #141d2e;
 	--color-tertiary: #0d1420;
+
+	--color-primary-glass: rgba(0, 106, 255, 0.7);
+	--color-secondary-glass: rgba(20, 29, 46, 0.6);
 }
 
+/* Theme 4 */
 .theme-4 {
 	--color-primary: #ffbcd2;
 	--color-secondary: #1f6246;
 	--color-tertiary: #154634;
+
+	--color-primary-glass: rgba(255, 188, 210, 0.7);
+	--color-secondary-glass: rgba(31, 98, 70, 0.6);
 }
 
+/* Theme 5 */
 .theme-5 {
 	--color-primary: #ffe085;
 	--color-secondary: #ba554a;
 	--color-tertiary: #8f3f36;
+
+	--color-primary-glass: rgba(255, 224, 133, 0.7);
+	--color-secondary-glass: rgba(186, 85, 74, 0.6);
 }
 
+/* Theme 6 */
 .theme-6 {
 	--color-primary: #ebff00;
 	--color-secondary: #504c26;
 	--color-tertiary: #3b381a;
+
+	--color-primary-glass: rgba(235, 255, 0, 0.7);
+	--color-secondary-glass: rgba(80, 76, 38, 0.6);
 }
 
+/* Theme 7 */
 .theme-7 {
 	--color-primary: #ebf0ff;
 	--color-secondary: #99a3bf;
 	--color-tertiary: #7b859e;
+
+	--color-primary-glass: rgba(235, 240, 255, 0.7);
+	--color-secondary-glass: rgba(153, 163, 191, 0.6);
 }
 
+/* Theme 8 */
 .theme-8 {
 	--color-primary: #ff0000;
 	--color-secondary: #040f49;
 	--color-tertiary: #020a30;
+
+	--color-primary-glass: rgba(255, 0, 0, 0.7);
+	--color-secondary-glass: rgba(4, 15, 73, 0.6);
 }
 
+/* Theme 9 */
 .theme-9 {
 	--color-primary: #ffd4af;
 	--color-secondary: #42503e;
 	--color-tertiary: #2d382f;
+
+	--color-primary-glass: rgba(255, 212, 175, 0.7);
+	--color-secondary-glass: rgba(66, 80, 62, 0.6);
 }
 
+/* Theme 10 */
 .theme-10 {
 	--color-primary: #ffcbdb;
 	--color-secondary: #3668ae;
 	--color-tertiary: #294b80;
+
+	--color-primary-glass: rgba(255, 203, 219, 0.7);
+	--color-secondary-glass: rgba(54, 104, 174, 0.6);
 }
 
+/* Theme 11 */
 .theme-11 {
 	--color-primary: #f1fae4;
 	--color-secondary: #868c7d;
 	--color-tertiary: #6d6f67;
+
+	--color-primary-glass: rgba(241, 250, 228, 0.7);
+	--color-secondary-glass: rgba(134, 140, 125, 0.6);
 }

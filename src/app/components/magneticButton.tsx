@@ -3,11 +3,19 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { Magnetic } from "../../../components/motion-primitives/magnetic";
+import clsx from "clsx";
 
 const springOptions = { bounce: 0.1 };
 
-const baseClasses =
-	"group inline-flex items-center rounded-lg border border-tertiary bg-secondary px-3 py-2 text-l text-primary transition-all duration-200 hover:bg-primary hover:text-secondary";
+const baseClasses = clsx(
+	"group inline-flex items-center rounded-lg border border-tertiary bg-secondary text-primary transition-all duration-200 hover:bg-primary hover:text-secondary",
+	// mobile (default)
+	"px-2 py-1.5 text-sm",
+	// tablet+
+	"sm:px-3 sm:py-2 sm:text-base",
+	// desktop+
+	"md:px-4 md:py-2 md:text-lg"
+);
 
 function InnerContent({ label }: { label: ReactNode }) {
 	return (
@@ -21,15 +29,18 @@ function InnerContent({ label }: { label: ReactNode }) {
 				{label}
 				<svg
 					aria-hidden="true"
-					width="20"
-					height="20"
+					className={clsx(
+						"transition-transform duration-200 group-hover:translate-x-0.5",
+						"w-4 h-4", // mobile
+						"sm:w-5 sm:h-5", // tablet
+						"md:w-6 md:h-6" // desktop
+					)}
 					viewBox="0 0 24 24"
 					fill="none"
 					stroke="currentColor"
 					strokeWidth="2.5"
 					strokeLinecap="round"
 					strokeLinejoin="round"
-					className="transition-transform duration-200 group-hover:translate-x-0.5"
 				>
 					<path d="M9 18l6-6-6-6" />
 				</svg>

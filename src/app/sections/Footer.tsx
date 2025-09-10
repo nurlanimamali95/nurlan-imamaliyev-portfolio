@@ -7,7 +7,7 @@ import { SocialLinks } from "@/app/components/socialLinks";
 
 export default function Footer() {
 	return (
-		<footer className="relative bg-primary text-secondary px-6 py-8 border-t border-secondary/20">
+		<footer className="relative bg-primary text-secondary px-6 py-8">
 			<motion.div
 				initial={{ opacity: 0, y: 20 }}
 				whileInView={{ opacity: 1, y: 0 }}

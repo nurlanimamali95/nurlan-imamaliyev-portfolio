@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import Loader from "@/app/components/loader";
 import Hero from "@/app/sections/Hero";
-import Footer from "@/app/sections/Footer";
-import About from "@/app/sections/About";
+// import Footer from "@/app/sections/Footer";
+// import About from "@/app/sections/About";
 
 export default function Home() {
 	const [showLoader, setShowLoader] = useState(false);
@@ -40,8 +40,8 @@ export default function Home() {
 				/>
 			)}
 			{showContent && <Hero />}
-			<About />
-			<Footer />
+			{/* <About /> */}
+			{/* <Footer /> */}
 		</main>
 	);
 }

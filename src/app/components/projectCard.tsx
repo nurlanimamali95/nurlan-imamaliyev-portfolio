@@ -3,61 +3,49 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { Project } from "@/helper/projectData";
+import { ProjectData } from "@/helper/projectData";
 
-export function ProjectCard({
-	title,
-	subtitle,
-	description,
-	image,
-	demo,
-	github,
-}: Project) {
+export function Card({ title, image, demo, github }: ProjectData) {
 	return (
 		<motion.div
-			whileHover={{ scale: 1.02 }}
-			className="relative rounded-xl overflow-hidden shadow-md w-full max-w-sm mx-auto cursor-pointer group bg-secondary"
+			whileHover={{ scale: 1.01 }}
+			className="relative rounded-lg overflow-hidden w-full h-[380px] bg-black group"
 		>
-			<div className="relative h-[350px]">
-				<Image
-					src={image}
-					alt={title}
-					fill
-					className="object-cover transition-all duration-500 group-hover:brightness-100 brightness-50"
-					sizes="(max-width: 1024px) 100vw, 50vw"
-				/>
+			<div className="absolute inset-0 overflow-hidden">
+				<motion.div
+					className="relative w-full h-[120%]"
+					initial={{ y: 0 }}
+					whileHover={{ y: -60 }}
+					transition={{ duration: 2, ease: "easeInOut" }}
+				>
+					<Image
+						src={image}
+						alt={title}
+						fill
+						className="object-cover"
+						sizes="(max-width: 1024px) 100vw, 33vw"
+					/>
+				</motion.div>
 			</div>
 
-			<div className="absolute inset-x-0 bottom-0 h-1/2 bg-secondary translate-y-full group-hover:translate-y-0 transition-all duration-500 p-4 flex flex-col justify-between">
-				{/* Title & text */}
-				<div>
-					<h3 className="text-lg font-semibold text-primary">{title}</h3>
-					{subtitle && <p className="text-sm text-primary mt-1">{subtitle}</p>}
-					{description && (
-						<p className="text-xs text-primary mt-2 line-clamp-2">
-							{description}
-						</p>
-					)}
-				</div>
-
-				{/* Actions */}
-				<div className="flex gap-3 mt-4">
+			<div className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+				<div className="flex gap-3">
 					{demo && (
 						<Link
 							href={demo}
 							target="_blank"
-							className="text-xs font-semibold text-secondary bg-primary rounded-lg px-3 py-1 hover:underline"
+							className="px-4 py-2 rounded-full bg-secondary/80 text-primary font-medium text-sm hover:bg-secondary transition min-w-[100px]"
 						>
-							Demo
+							Demo ↗
 						</Link>
 					)}
 					{github && (
 						<Link
 							href={github}
 							target="_blank"
-							className="text-xs font-semibold text-secondary bg-primary rounded-lg px-3 py-1 hover:underline"
+							className="px-4 py-2 rounded-full bg-secondary/80 text-primary font-medium text-sm hover:bg-secondary transition min-w-[100px]"
 						>
-							GitHub
+							GitHub ↗
 						</Link>
 					)}
 				</div>

@@ -1,4 +1,4 @@
-export interface Project {
+export interface ProjectData {
 	title: string;
 	subtitle?: string;
 	image: string;
@@ -9,7 +9,7 @@ export interface Project {
 	reviews?: string[];
 }
 
-export const projects: Project[] = [
+export const projectsData: ProjectData[] = [
 	{
 		title: "Jasmine Tours",
 		subtitle: "Experience agency",

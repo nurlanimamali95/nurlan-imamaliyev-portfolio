@@ -35,9 +35,9 @@ const skills = [
 
 export default function Stack() {
 	return (
-		<div className="max-w-[120rem] m-auto mt-12">
+		<div className="max-w-[50rem] m-auto mt-12">
 			<Marquee direction="left" speed={60} gradient={false}>
-				<div className="flex items-center gap-7 px-4 py-6 text-4xl text-primary">
+				<div className="flex items-center gap-7 px-4 py-6 text-4xl text-secondary">
 					{skills.map((skill, index) => (
 						<div
 							key={index}

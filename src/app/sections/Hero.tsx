@@ -10,7 +10,7 @@ import {
 	MagneticActionButton,
 } from "@/app/components/magneticButton";
 
-export default function Hero() {
+export default function HeroSection() {
 	return (
 		<section className="relative flex flex-col items-center justify-center h-screen px-6 text-center overflow-hidden">
 			<div className="absolute inset-0 flex items-center justify-center pointer-events-none">
